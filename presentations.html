@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentations</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .presentation-item {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            cursor: pointer;
+        }
+        .presentation-item:hover {
+            background-color: #f9f9f9;
+        }
+        .date-author {
+            font-size: 0.9em;
+            color: #777;
+            margin-bottom: 5px;
+        }
+        .title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .category {
+            font-size: 0.8em;
+            color: #555;
+            border: 1px solid #ccc;
+            padding: 2px 5px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+        .description {
+            font-size: 1em;
+            color: #333;
+        }
+        .thumbnail {
+            max-width: 200px;
+            height: auto;
+            border: 1px solid #eee;
+            box-shadow: 1px 1px 5px #ccc;
+        }
+        .sidebar {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+            width: 200px;
+        }
+        .sidebar-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .sidebar-item {
+            margin-bottom: 8px;
+        }
+        .container {
+            display: flex;
+            gap: 30px;
+        }
+        .main-content {
+            flex-grow: 1;
+        }
+        /* Style for the individual presentation page */
+        .presentation-view {
+            margin: 20px;
+        }
+        .presentation-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .presentation-embed {
+            /* You'll need to adjust these styles based on how you are embedding */
+            width: 80%;
+            height: 600px; /* Adjust as needed */
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <div class="presentation-item" onclick="openPresentation('creating-effective-graphics.html')">
+                <div>
+                    <div class="date-author">Nov 13, 2024<br>Susan Vanderplas</div>
+                    <div class="title">Creating Effective Graphics</div>
+                    <span class="category">TALKS</span>
+                    <div class="description">How do we create effective charts and graphs for scientific presentations? What are the elements of effective charts and graphics? Which charts should be used for different...</div>
+                </div>
+                <img src="placeholder-image.png" alt="Graphics Thumbnail" class="thumbnail">
+            </div>
+
+            <div class="presentation-item" onclick="openPresentation('incorrect-statistical-reasoning.html')">
+                <div>
+                    <div class="date-author">Nov 5, 2024<br>Michael Rosenblum,<br>Elizabeth T. Chin,<br>Elizabeth L. Ogburn,<br>Akihiko Nishimura,<br>Daniel Westreich</div>
+                    <div class="title">Incorrect statistical reasoning in Guyll et al. leads to biased claims about strength of forensic evidence</div>
+                    <span class="category">PAPERS</span>
+                </div>
+                <img src="placeholder-image.png" alt="Statistics Thumbnail" class="thumbnail">
+            </div>
+
+            </div>
+
+        <div class="sidebar">
+            <div class="sidebar-title">Categories</div>
+            <div class="sidebar-item">All (73)</div>
+            <div class="sidebar-item">other (1)</div>
+            <div class="sidebar-item">papers (33)</div>
+            <div class="sidebar-item">talks (39)</div>
+        </div>
+    </div>
+
+    <script>
+        function openPresentation(url) {
+            window.open(url, '_blank'); // Opens in a new tab
+            // Alternatively, to open in the same window:
+            // window.location.href = url;
+        }
+    </script>
+
+    <! -- Example for Google Slides: -->
+                <iframe src="YOUR_GOOGLE_SLIDES_EMBED_URL_HERE" frameborder="0" width="100%" height="600" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            </div>
+            <p><a href="index.html">Back to Presentations</a></p>
+        </div>
+    </body>
+    </html>
+    -->
+
+    <script>
+        // Replace 'placeholder-image.png' with actual image URLs
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        thumbnails.forEach(img => {
+            img.src = 'https://via.placeholder.com/200x120'; // Example placeholder
+        });
+    </script>
+</body>
+</html>
