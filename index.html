@@ -154,6 +154,21 @@
     .social-icons a:hover {
       color: #ffcc00;
     }
+
+    .item1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-image {
+    width: 100%;
+    max-width: 600px; /* Adjusts max width */
+    aspect-ratio: 16 / 9; /* Ensures aspect ratio */
+    object-fit: cover; /* Fills the space properly */
+    border-radius: 8px; /* Optional styling */
+}
+
   </style>
 </head>
 <body>
@@ -176,8 +191,9 @@
       </div>
       <div class="social-links">
     <a href="https://github.com/khasanthika" target="_blank" class="fab fa-github"></a>
-      <a href="https://www.linkedin.com/in/kalani-hasanthika-366b39b3/" target="_blank" class="fab fa-linkedin"></a>
-      <a href="mailto:kalanihasanthika@gmail.com" target="_blank"> <i class="fas fa-envelope"></i></a>
+    <a href="https://www.linkedin.com/in/kalani-hasanthika-366b39b3/" target="_blank" class="fab fa-linkedin"></a>
+    <a href="mailto:kalanihasanthika@gmail.com" target="_blank"> <i class="fas fa-envelope"></i></a>
+    <a href="https://scholar.google.com/citations?user=yourid" target="_blank"><i class="fas fa-graduation-cap"></i></a>
       </div>
     </div>
   </header>
@@ -186,14 +202,14 @@
   <div id="home" class="tab-content active">
     <h2>Welcome</h2>
     <p>This is the home page. Use the tabs above to navigate through my Presentations, Papers, LinkedIn articles and Software.</p>
-    <div class="item">
-      <img
-        src="images/IMG_6285.jpg"
-        alt="Tech Section Image"
-        class="section-image"
-     width="700"
-      />
-    </div>
+   <div class="item1">
+            <img 
+                src="images/IMG_6285.jpg" 
+                alt="Tech Section Image" 
+                class="section-image" 
+            />
+        </div>
+
   <a href="https://khasanthika.github.io/">&larr; Return to My Website</a>
   </div>
 
@@ -273,11 +289,11 @@
         <small>Published on March 12, 2025</small>
       </div>
     </div>
-
+  </ul><div style="display: flex; justify-content: space-between; margin-top: 20px;">
     <a href="https://khasanthika.github.io/">&larr; Return to My Website</a>
     <a href="https://khasanthika.github.io/my-portfolio/">Return to Research & Publictions &rarr;</a>
   </div>
- </div>
+</div>
   
   <!-- Software Tab Content -->
   <div id="software" class="tab-content">
